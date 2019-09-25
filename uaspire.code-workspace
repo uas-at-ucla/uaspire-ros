@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src/uaspire_controls"
+		}
+	],
+	"settings": {
+		"ros.distro": "dashing"
+	}
+}
