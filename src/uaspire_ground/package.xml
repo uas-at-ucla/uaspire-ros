@@ -14,11 +14,13 @@
   <build_depend>rcutils</build_depend>
   <build_depend>rmw</build_depend>
   <build_depend>rosidl_generator_c</build_depend>
+  <build_depend>uaspire_msgs</build_depend>
 
   <exec_depend>rcl</exec_depend>
   <exec_depend>rcutils</exec_depend>
   <exec_depend>rmw</exec_depend>
   <exec_depend>rosidl_generator_c</exec_depend>
+  <exec_depend>uaspire_msgs</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
