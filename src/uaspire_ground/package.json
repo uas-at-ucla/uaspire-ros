@@ -1,0 +1,18 @@
+{
+  "name": "uaspire_ground",
+  "version": "0.0.1",
+  "description": "UASPIRE Ground",
+  "main": "index.js",
+  "bin": {
+    "uaspire_ground": "./index.js"
+  },
+  "scripts": {
+    "postinstall": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Mikhalev <alexmikhalevalex@gmail.com> (http://github.com/amikhalev)",
+  "license": "MIT",
+  "dependencies": {
+    "rclnodejs": "git://github.com/amikhalev/rclnodejs#fix-multiple-ament-paths"
+  }
+}
