@@ -59,3 +59,5 @@ RUN echo "source /opt/ros/dashing/local_setup.bash" >> /home/$USERNAME/.bashrc
 ###
 # END OF ROOT/USER CONFIG
 ###
+
+EXPOSE 8080

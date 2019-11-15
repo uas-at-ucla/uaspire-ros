@@ -13,6 +13,7 @@
   "author": "Alex Mikhalev <alexmikhalevalex@gmail.com> (http://github.com/amikhalev)",
   "license": "MIT",
   "dependencies": {
-    "rclnodejs": "git://github.com/amikhalev/rclnodejs#fix-multiple-ament-paths"
+    "rclnodejs": "git://github.com/amikhalev/rclnodejs#fix-multiple-ament-paths",
+    "socket.io": "^2.3.0"
   }
 }

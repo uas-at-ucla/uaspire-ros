@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 
 const rcl = require("rclnodejs");
+const socketIOServer = require('socket.io');
+
+const sioPort = 8080;
+const io = socketIOServer(sioPort);
+
+io.on('connect', (socket) => {
+  console.log("SocketIO client connected!");
+});
 
 async function start() {
     await rcl.init();
@@ -11,6 +19,7 @@ async function start() {
 
     const node = rcl.createNode("uaspire_ground");
     node.createSubscription(MsgSensors, "uaspire/sensors", (sensors) => {
+        io.emit("MSG", "SENSORS", sensors);
         console.log("Received sensors: ", sensors);
     });
     rcl.spin(node);
